@@ -35,7 +35,7 @@ export default function GenerateQRCodeContractPage() {
     }
 
     //const baseUrl = window.location.origin;
-    //Chama dapp no navegador do celular
+    //Chama Dapp no navegador do celular
     /*const baseUrl = "https://cripto-comercio-frontend.vercel.app";
     const url = `${baseUrl}/pay?merchant=${walletAddress}&amount=${amount}`;*/
 
