@@ -10,7 +10,7 @@ export default function Sidebar() {
     /*{ href: "/paywithbnb", label: "Create PayToken", icon: "info.svg" },*/
     { href: "/generatebnbqr", label: "Generate BNB QRCode", icon: "qrcode1.svg" },
     { href: "/generateqrcodecontract", label: "Generate QRCode Dapp", icon: "qrcode2.svg" },
-    /*{ href: "/pay", label: "Pay", icon: "info.svg" },*/
+    { href: "/pay", label: "Pay", icon: "info.svg" },
     { href: "/about", label: "Sobre", icon: "about.svg" },
   ];
 
