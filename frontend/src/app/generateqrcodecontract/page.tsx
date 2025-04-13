@@ -40,7 +40,7 @@ export default function GenerateQRCodeContractPage() {
     const url = `${baseUrl}/pay?merchant=${walletAddress}&amount=${amount}`;*/
 
     //Link URL publica
-    const dappDomain = "cripto-comercio-frontend.vercel.app"; // sem https
+    const dappDomain = "cripto-market-qr-code.vercel.app"; // sem https
     const url = `metamask://dapp/${dappDomain}/pay?merchant=${walletAddress}&amount=${amount}`;
 
 
