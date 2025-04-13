@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./db");
-const startListener = require("./listener"); // Opcional, se estiver usando eventos
+const startListener = require("./services/monitor"); // Opcional, se estiver usando eventos
 const startBNBMonitor = require("./services/monitorBNB");
 
 const app = express();
