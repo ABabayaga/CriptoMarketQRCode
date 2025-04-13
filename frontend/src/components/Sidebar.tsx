@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Sidebar() {
   const menuItems = [
     { href: "/home", label: "Menu", icon: "/home.svg" },
-    { href: "/dashboard", label: "Historico", icon: "archive.svg" },
+    { href: "/historico", label: "Historico", icon: "archive.svg" },
     /*{ href: "/paywithbnb", label: "Create PayToken", icon: "info.svg" },*/
     { href: "/generatebnbqr", label: "Generate BNB QRCode", icon: "qrcode1.svg" },
     { href: "/generateqrcodecontract", label: "Generate QRCode Dapp", icon: "qrcode2.svg" },

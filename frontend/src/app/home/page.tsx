@@ -26,7 +26,10 @@ export default function HomePage() {
   useEffect(() => {
     async function loadDashboard() {
       try {
-        const res = await fetch("http://localhost:5000/api/dashboard");
+        //Banco local
+        /*const res = await fetch("http://localhost:5000/api/dashboard");*/
+        //Banco Mongo Atlas
+        const res = await fetch("https://criptomarketqrcode.onrender.com/api/dashboard");
         const data = await res.json();
         setDashboard(data);
       } catch (err) {

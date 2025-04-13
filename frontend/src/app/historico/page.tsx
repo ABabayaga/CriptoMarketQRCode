@@ -29,9 +29,11 @@ export default function DashboardPage() {
 
         const fetchPayments = async () => {
             try {
-                const res = await fetch(
+                //backend local
+                /*const res = await fetch(
                     `http://localhost:5000/api/payments?merchant=${wallet}`
-                );
+                );*/
+                const res = await fetch("https://criptomarketqrcode.onrender.com/api/payments");
                 const data = await res.json();
                 setPayments(data);
             } catch (err) {
