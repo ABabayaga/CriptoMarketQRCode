@@ -13,3 +13,21 @@
 
 ---
 
+backend/
+├── node_modules/
+├── src/
+│   ├── models/
+│   │   ├── Metadata.js          # Modelo do último bloco monitorado
+│   │   └── Payment.js           # Modelo dos pagamentos recebidos via contrato
+│   ├── routes/
+│   │   ├── dashboard.js         # Rotas de estatísticas (ex: total recebido)
+│   │   └── payments.js          # Rotas para consultar os pagamentos
+│   ├── services/
+│   │   └── monitorBNB.js        # Escuta blocos e eventos na BNB Testnet
+│   ├── db.js                    # Conexão com o MongoDB usando URI do .env
+│   └── index.js                 # Inicializa o servidor Express e as rotas
+├── .env                         # Variáveis de ambiente (ex: RPC, MONGO_URI)
+├── .gitignore                   # Arquivos ignorados pelo Git
+├── package.json                 # Dependências e comandos npm
+├── package-lock.json            # Versões travadas das dependências
+└── README.md / NOTES.md         # Documentação do projeto
