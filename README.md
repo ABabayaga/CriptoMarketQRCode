@@ -16,6 +16,7 @@ Plataforma Web3 para geração de QR Codes de pagamento em BNB — seja via **co
 
 ## 📁 Estrutura do Projeto
 
+CriptoMarketQRCode/ ├── frontend/ # Interface Next.js + React + Bootstrap ├── backend/ # Servidor Express + MongoDB + Web3 ├── blockchain/ # Smart contract (versão original) ├── blockchainV2/ # Smart contract atualizado com eventos
 
 ---
 
