@@ -1,16 +1,15 @@
-# Explicações dos arquivos
 
-- `index.js`: ponto de entrada do servidor backend.
-- `listener.js`: escuta eventos do smart contract.
-- `routes/payments.js`: define as rotas relacionadas aos pagamentos.
-- `db.js`: conexão com o banco de dados MongoDB.
+---
 
+### 📌 Descrições dos arquivos principais:
 
-backend/
-├── src/
-│   ├── index.js          # Servidor Express
-│   ├── listener.js       # Escuta o contrato
-│   ├── db.js             # Conexão MongoDB
-│   └── routes/
-│       └── payments.js   # API GET pagamentos
-├── .env
+- **index.js**: Ponto de entrada do servidor Node.js com Express.
+- **services/monitorBNB.js**: Monitora novos blocos na BNB Testnet, registra pagamentos e atualiza o último bloco processado.
+- **routes/dashboard.js**: Fornece estatísticas (ex: total recebido, número de transações).
+- **routes/payments.js**: Define rotas GET para acessar pagamentos armazenados.
+- **models/Payment.js**: Define o schema dos pagamentos registrados (payer, merchant, amount, timestamp...).
+- **models/Metadata.js**: Salva o número do último bloco processado para evitar reprocessamento.
+- **db.js**: Conecta ao banco MongoDB usando a variável `MONGO_URI`.
+
+---
+
